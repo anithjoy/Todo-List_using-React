@@ -3,6 +3,7 @@ import { useState } from "react";
 export function NewTodoForm(props) {
   const [newItem, setNewItem] = useState("");
   const handleSubmit = (e) => {
+    // PREVENT DEFAULT ACTION THAT IS RELOADING
     e.preventDefault();
 
     if (newItem === "") {
